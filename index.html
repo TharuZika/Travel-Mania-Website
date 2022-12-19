@@ -3,29 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <title>Travel Mania</title>
+
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/97dbc65e21.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
-<div class="navbar">
-    <a href="#"><img class="logo" src="assets/images/logo.png" alt="#"></a>
-        <ul class="nav-items">
-            <li class="nav-links"><a href="#">Home</a></li>
-            <li class="nav-links"><a href="#">About</a></li>
-            <li class="nav-links"><a href="#">Contact</a></li>
-        </ul>
-</div>
-<main class="main">
-    <div class="slide">
-        <div class="header-text">
-            <h1 class="header">Become a <br><span>Traveller</span></h1>
+
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-file-globe-icon-svg-wikimedia-commons-21.png" alt="Bootstrap" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="text-light nav-link active" aria-current="page" href="#">Home</a>
+                <a class="text-light nav-link" href="#">Features</a>
+                <a class="text-light nav-link" href="#">Pricing</a>
+            </div>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!--Slider-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active slide" data-bs-interval="500">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2015/03/beach-wallpaper-1920x1080.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-flex flex-row">
+                <h1>First slide label</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid aperiam aspernatur blanditiis delectus dolorem doloribus earum eligendi eos facere id impedit itaque nihil, nobis odio quis ut vero voluptatibus!</p>
+            </div>
+        </div>
+        <div class="carousel-item slide" data-bs-interval="500">
+            <img src="https://wallpohub.com/wp-content/uploads/2022/07/Travel-Adventure-Bike-Wallpaper-for-Background-Image-Picture-4k-Hd-3840x2160-for-Laptop-Pc-Computer-Mac-Desktop.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item slide" data-bs-interval="500">
+            <img src="https://wallpaperaccess.com/full/8208340.jpg" class="d-block w-100" alt="...">
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
+<!--cards-->
+<!--<div class="d-flex align-items-center justify-content-between container position-absolute top-100 start-50 translate-middle" style="z-index: 10">-->
+<!--    <div class="row row-cols-1 row-cols-sm-3 g-4">-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100 shadow">-->
+<!--                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/tour-instagram-promotional-template-design-c77358b14e6b20ccf3f75d1941b7af49_screen.jpg?ts=1599162405" class="card-img-top" alt="...">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100 shadow">-->
+<!--                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/tour-travel-agency-square-post-design-template-bbaa2a0a4d03139b076e568277bd92be_screen.jpg?ts=1659669568" class="card-img-top" alt="...">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card h-100 shadow">-->
+<!--                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/instagram-travel-agency-video-template-ad1f67269fb9c355db1268969293fc4c_screen.jpg?ts=1567091725" class="card-img-top" alt="...">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title</h5>-->
+<!--                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <small class="text-muted">Last updated 3 mins ago</small>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
-</main>
+<!--footer-->
+<div class="my-5">
 
+    <footer class="bg-success text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">www.travelmania.com</a>
+        </div>
+    </footer>
+</div>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="index.js"></script>
 </body>
